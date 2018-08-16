@@ -23,6 +23,9 @@ this.getGif();
   }
 
 
+
+
+
   ngOnInit() {
   }
 
