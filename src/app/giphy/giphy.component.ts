@@ -10,7 +10,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./giphy.component.css']
 })
 export class GiphyComponent implements OnInit {
-  link = 'http://api.giphy.com/v1/gifs/search?api_key=dc6zaTOxFJmzC&q=';
+  link = 'https://api.giphy.com/v1/gifs/search?api_key=Nh8dONvqjH7KYCIDU3bXnAmbMY94NeuZ&q=';
 
   // create a variable that will store an array returned from data.data
  gifs= [];
@@ -27,13 +27,12 @@ this.getGif();
   }
 
 
-
+// adding the search functionality through changing url, note you have to import httpclientmodule and add http to constructor
   performSearch(searchTerm: HTMLInputElement): void {
        var apiLink = this.link + searchTerm.value;
 
-       this.http.get(apiLink)
-           .subscribe((res: Response) => {
-                 this.gifs = res["data"];;
+       this.http.get(apiLink).subscribe((res: Response) => {
+                 this.gifs = res["data"];
                  console.log(this.gifs);
            });
 }
