@@ -8,13 +8,13 @@ import {Gifs} from '../gifs';
   styleUrls: ['./giphy.component.css']
 })
 export class GiphyComponent implements OnInit {
-public gifs= new Gifs('');
+public gifs= [];
   constructor(public gifService: GifService) {
 this.getGif();
   }
   public getGif(){
     this.gifService.getTrendingGifs().subscribe((data: Gifs)=>{
-      this.gifs=new Gifs(data.data[3].images.preview_gif.url);
+      this.gifs=(data.data);
       console.log(data.data);
     });
   }
