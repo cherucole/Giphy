@@ -1,4 +1,4 @@
-export class Gifs {
-  constructor(  public gifs: string){}
-
-}
+// export class Gifs {
+//   constructor(  public gifs: string){}
+//
+// }

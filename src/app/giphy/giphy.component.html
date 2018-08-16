@@ -1,7 +1,7 @@
 <div class="">
   <!-- <img src="{{gifs.gifs}}" alt=""> -->
   <!-- from the variable called gifs that stored our array, we want to go inside and show each object  -->
-  <img *ngFor='let gif of gifs, let i=index' src="{{gifs[i].images.preview_gif.url}}" alt="">
+  <img *ngFor='let gif of gifs, let i=index' src="{{gifs[i].images.preview_gif.url}}" style="height:300px; width:300px;" alt="">
 </div>
 
 <div class="">
