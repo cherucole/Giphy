@@ -1,5 +1,6 @@
 export class Gifs {
+  // public gifs: string;
   constructor(  public gifs: string){}
-  this.data=gifs
+  this.gifs=gifs;
 
 }
