@@ -14,8 +14,8 @@ this.getGif();
   }
   public getGif(){
     this.gifService.getTrendingGifs().subscribe((data: Gifs)=>{
-      this.gifs=new Gifs(data.data[2].images.preview_gif.url);
-      console.log(data.data[0].images.preview_gif.url);
+      this.gifs=new Gifs(data.data[3].images.preview_gif.url);
+      console.log(data.data);
     });
   }
 
