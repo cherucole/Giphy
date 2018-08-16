@@ -9,15 +9,16 @@ import {Gifs} from '../gifs';
 })
 export class GiphyComponent implements OnInit {
   // create a variable that will store an array returned from data.data
-public gifs= [];
+ gifs= [];
   constructor(public gifService: GifService) {
 this.getGif();
   }
   public getGif(){
-    this.gifService.getTrendingGifs().subscribe((data: Gifs)=>{
-      this.gifs=(data.data);
+    this.gifService.getTrendingGifs().subscribe(data=>{
+
+      this.gifs=data["data"];
       // data.data returns an array that gets assigned to the variable created
-      console.log(data.data);
+       console.log(this.gifs);
     });
   }
 
