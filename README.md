@@ -1,7 +1,10 @@
 # Giphy
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.2.
-
+how to create this project from scratch:
+* create the service providers
+* create the class
+* go update the appmodule to import required modules and imports
+* go to the .ts in the component you are on and start writing the code now
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

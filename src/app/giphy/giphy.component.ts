@@ -8,6 +8,7 @@ import {Gifs} from '../gifs';
   styleUrls: ['./giphy.component.css']
 })
 export class GiphyComponent implements OnInit {
+  // create a variable that will store an array returned from data.data
 public gifs= [];
   constructor(public gifService: GifService) {
 this.getGif();
@@ -15,6 +16,7 @@ this.getGif();
   public getGif(){
     this.gifService.getTrendingGifs().subscribe((data: Gifs)=>{
       this.gifs=(data.data);
+      // data.data returns an array that gets assigned to the variable created
       console.log(data.data);
     });
   }
