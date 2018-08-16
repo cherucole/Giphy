@@ -26,7 +26,6 @@ this.getGif();
     });
   }
 
-
 // adding the search functionality through changing url, note you have to import httpclientmodule and add http to constructor
   performSearch(searchTerm: HTMLInputElement): void {
        var apiLink = this.link + searchTerm.value;
