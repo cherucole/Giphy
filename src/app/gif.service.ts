@@ -12,4 +12,6 @@ export class GifService {
     getTrendingGifs(){
      return this.http.get('https://api.giphy.com/v1/gifs/trending?api_key=Nh8dONvqjH7KYCIDU3bXnAmbMY94NeuZ')
    }
+
+
 }
